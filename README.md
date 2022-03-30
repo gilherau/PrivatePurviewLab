@@ -26,10 +26,10 @@ This lab assumes the reader has basic familiarity with the following topics:
 
 ## :student: Learning modules
 
-1- Azure cloud adoption framework concepts
-1- Azure cloud security best practices
-1- Environment description and architecture
-1- Setting up the simulated network
-1- Setting up "Private" Azure Purview account
-1- Setting up "private" sample data sources
-1- Setting up
+1. Azure cloud adoption framework concepts
+2. Azure cloud security best practices
+3. Environment description and architecture
+4. Setting up the simulated network
+5. Setting up "Private" Azure Purview account
+6. Setting up "private" sample data sources
+7. Setting up
