@@ -4,7 +4,7 @@ This lab will guide you through activities to create a private network environme
 
 ## :student: Learning objectives
 
-- Refresh your knowledge of the CLoud Adoption Framework and the Data management scenario
+- Refresh your knowledge of the Cloud Adoption Framework and the Data management scenario
 - How to create a private network and securely log on to it
 - Simulate a private network as a customer would see it.
 - Learn about proper security hygiene and hardening best practices for modern data platforms
@@ -26,10 +26,8 @@ This lab assumes the reader has basic familiarity with the following topics:
 
 ## :student: Learning modules
 
-1. Azure cloud adoption framework concepts
-2. Azure cloud security best practices
-3. Environment description and architecture
-4. Setting up the simulated network
-5. Setting up "Private" Azure Purview account
-6. Setting up "private" sample data sources
-7. Setting up
+1. Environment description and architecture
+2. Setting up the simulated network and secure access workstation
+3. Setting up "Private" Azure Purview account
+4. Setting up "private" sample data sources
+5. Setting up "private" purview scans using the Managed VNET feature
