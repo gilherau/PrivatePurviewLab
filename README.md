@@ -26,8 +26,10 @@ This lab assumes the reader has basic familiarity with the following topics:
 
 ## :student: Learning modules
 
-1. Environment description and architecture
-2. Setting up the simulated network and secure access workstation
+1. [Environment description and architecture](/modules/module00.md)
+2. [Setting up the simulated network and secure access workstation](/modules/module01.md)
 3. Setting up "Private" Azure Purview account
 4. Setting up "private" sample data sources
 5. Setting up "private" purview scans using the Managed VNET feature
+
+[Begin lab](/modules/module00.md)
