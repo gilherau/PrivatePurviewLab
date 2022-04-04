@@ -4,6 +4,8 @@ This lab will guide you through activities to create a private network environme
 
 >:muscle: We fully realize that much of what you will do here could have been automated using scripting and the ARM engine. But where's the fun in that? By manually doing all the steps in this lab, you will have a much more memorable experience and will understand the plumbing that powers Azure.
 
+>:moneybag: **IMPORTANT** please be mindful of the azure consumption of this lab. If left unattended for long periods of time the cost could be substantial. We strongly encourage you to follow the tips and guidance marked in this lab with the :moneybag: icon for tips about saving costs.
+
 ## :student: Learning objectives
 
 - Refresh your knowledge of the Cloud Adoption Framework and the Data management scenario
