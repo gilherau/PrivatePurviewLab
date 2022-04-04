@@ -22,10 +22,4 @@ This will simulate the most stringent of standards that you may encounter in the
 | ------------- | ------------- |
 | 1- Subscription and Resource group  | This lab recommends to create one resource group to hold all our elements for easy of deployment and cleaning up  |
 | 2- Virtual network peerings  | This lab will attempt to simulate a real network setup that you would encounter in the field. Thus we are creating three virtual network to simulate three distinct subscription. We are peering all three of them to simulate a data mesh architecture |
-| 3- Virtual networks |
-
-1. The hub network
-2. The Data Management Landing zone Network
-3. The Data Landing zone network
-
-|
+| 3- Virtual networks | We will create three peered virtual network. The hub network, the Data Management Landing zone Network and the Data Landing zone network. Please see [Setting up the simulated network and secure access workstation](/modules/module01.md) for details. |
