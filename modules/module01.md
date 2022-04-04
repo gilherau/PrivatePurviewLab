@@ -12,6 +12,6 @@ This needs to be done using an Azure CLI command as follows
 
 ``` azurecli
 az login
-az account set --subscription "73499bed-85c5-460b-9c83-39aa7d9cd41a"
-az network bastion rdp --name "PrivatePvlBastion" --resource-group "Private-PVL" --target-resource-id "/subscriptions/73499bed-85c5-460b-9c83-39aa7d9cd41a/resourceGroups/Private-PVL/providers/Microsoft.Compute/virtualMachines/PrivatePvlWorkstation"
+az account set --subscription "<SubscriptionId>"
+az network bastion rdp --name "<BastionName>" --resource-group "<ResourceGroupName>" --target-resource-id "<ResourceIdOfVirtualMachine>"
 ```
