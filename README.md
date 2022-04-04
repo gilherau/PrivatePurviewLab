@@ -2,6 +2,8 @@
 
 This lab will guide you through activities to create a private network environment for Azure Purview. This lab does not seek to replace other Azure Purview labs and will not go into a lot of details for purview specific functionalities but instead will focus on the typical azure environments that Azure Purview will be deployed to in the field.
 
+>[!NOTE] We fully realize that much of what you will do here could have been automated using scripting and the ARM engine. But where's the fun in that? By manually doing all the steps in this lab, you will have a much more memorable experience and will understand the plumbing that powers Azure.
+
 ## :student: Learning objectives
 
 - Refresh your knowledge of the Cloud Adoption Framework and the Data management scenario
@@ -23,6 +25,7 @@ This lab assumes the reader has basic familiarity with the following topics:
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
 - You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
 - (Optional) A local [installation](https://docs.microsoft.com/cli/azure/install-azure-cli) of Azure CLI
+- Patience, curiosity and a readiness to tinker.
 
 ## :student: Learning modules
 
