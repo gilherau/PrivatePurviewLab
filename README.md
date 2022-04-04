@@ -2,7 +2,7 @@
 
 This lab will guide you through activities to create a private network environment for Azure Purview. This lab does not seek to replace other Azure Purview labs and will not go into a lot of details for purview specific functionalities but instead will focus on the typical azure environments that Azure Purview will be deployed to in the field.
 
->: muscle: We fully realize that much of what you will do here could have been automated using scripting and the ARM engine. But where's the fun in that? By manually doing all the steps in this lab, you will have a much more memorable experience and will understand the plumbing that powers Azure.
+>:muscle: We fully realize that much of what you will do here could have been automated using scripting and the ARM engine. But where's the fun in that? By manually doing all the steps in this lab, you will have a much more memorable experience and will understand the plumbing that powers Azure.
 
 ## :student: Learning objectives
 
