@@ -2,6 +2,12 @@
 
 Blah
 
+## Creating your resource group
+
+For the purpose of this lab, we will keep everything nice and clean in one resource group so you can easily clean up when done.
+
+
+
 ## Setting up the VNETS
 
 Blah
