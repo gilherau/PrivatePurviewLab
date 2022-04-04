@@ -1,6 +1,6 @@
 # Environment description and architecture
 
-[Home](/README.md) - [Next Module](/modules/module01.md)
+**[Home](/README.md)** - [Next Module](/modules/module01.md)
 
 ## Overview
 
