@@ -1,5 +1,7 @@
 # Environment description and architecture
 
+[Home](/README.md) - [Next Module](/modules/module01.md)
+
 ## Overview
 
 The goal here is to simulate a bare bone environment that approximates the main components you would find in deployments that follow the [Cloud Adoption framework](https://docs.microsoft.com/azure/cloud-adoption-framework/) and require a private access. For the sake of learning and exposure to more restrictive guidelines. To that end, the following area of interest are included in the architecture:
