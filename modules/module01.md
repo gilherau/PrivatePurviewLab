@@ -1,8 +1,7 @@
 Table of contents
 ===
 
-___
-:arrow_backward:[Previous module](/modules/module00.md) - [**home**](/README.md) - [Next Module](/modules/module02.md):arrow_forward:
+[:arrow_backward: Previous module](/modules/module00.md) - [**home**](/README.md) - [Next Module :arrow_forward:](/modules/module02.md)
 
 # Setting up the base environment and simulated network
 
