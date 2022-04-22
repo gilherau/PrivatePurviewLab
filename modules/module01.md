@@ -16,22 +16,19 @@ We will now create the resource group that will hold all our solution. This will
 For the purpose of this lab, we will keep everything nice and clean in one resource group so you can easily clean up when done.
 
 1. First let's log on to the [Azure Portal](https://portal.azure.com) and **sign in**.
-___
+    ___
 1. Then using the top search box let's search for **"resource group"**
 
     ![SearchingResourceGroup](/images/Module01_1.png)
-___
+    ___
 
 1. Then we click on **"create"** ![ResourceGroupCreate](/images/Module01_2.png)
 1. Chose your resource group name (suggestion: **"PurviewPrivateLab"**) and region ( no suggestion but we strongly suggest you **stay consistent**). Finally, hit **"Review and Create"**  
 
     ![ResourceGroupDetail](/images/Module01_3.png)
-
-___
-
+    ___
 1. Next hit the **"Go to Resource Group"** button and we can move to creating the VNETs ![ConfirmResourceGroupCreation](/images/Module01_4.png)  
-
-___
+    ___
 
 ## Setting up the VNETS
 
