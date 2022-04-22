@@ -2,7 +2,7 @@
 
 [:arrow_backward: Previous module](/modules/module00.md) - [**home**](/README.md) - [Next Module :arrow_forward:](/modules/module02.md)
 
-Table of contents
+## Module sections
 
 * [Setting up the base environment and simulated network](#setting-up-the-base-environment-and-simulated-network)
   * [Creating your resource group](#creating-your-resource-group)
@@ -11,7 +11,7 @@ Table of contents
 
 We will now create the resource group that will hold all our solution. This will allow to easily clean up resources when done with the lab. In a real world scenario, the different networks we will create would actually be in different Azure Subscriptions.
 
-## Creating your resource group
+## Creating your resource group [:arrow_double_up:](#module-sections)
 
 For the purpose of this lab, we will keep everything nice and clean in one resource group so you can easily clean up when done.
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-## Setting up the VNETS
+## Setting up the VNETS [:arrow_double_up:](#module-sections)
 
 1. Once in your resource group, hit the **"+"** sign to add a new service. ![AddNewVnet](/images/Module01_5.png)
 1. Then search for **"Virtual Network"** and click on **"Virtual Network"** ![SearchForVnet](/images/Module01_6.png)
@@ -60,7 +60,7 @@ Use this table when repeating step 6
 |dmlz-vnet|dmlz-sn-1|10.61.1.0/24|
 |dlz-vnet|dlz-sn-1|10.62.1.0/24|
 
-## Peering the Three VNETs together
+## Peering the Three VNETs together [:arrow_double_up:](#module-sections)
 
 This step will connect all three VNETs together into a mesh. This essentially makes all three network become one big network. This is useful when scaling out your data mesh across multiple subscription. It serves no real purpose for this lab but it demonstrate how a typical network environment is setup.
 
