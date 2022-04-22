@@ -1,9 +1,13 @@
-Table of contents
-===
+# Setting up the base environment and simulated network
 
 [:arrow_backward: Previous module](/modules/module00.md) - [**home**](/README.md) - [Next Module :arrow_forward:](/modules/module02.md)
 
-# Setting up the base environment and simulated network
+Table of contents
+
+* [Setting up the base environment and simulated network](#setting-up-the-base-environment-and-simulated-network)
+  * [Creating your resource group](#creating-your-resource-group)
+  * [Setting up the VNETS](#setting-up-the-vnets)
+  * [Peering the Three VNETs together](#peering-the-three-vnets-together)
 
 We will now create the resource group that will hold all our solution. This will allow to easily clean up resources when done with the lab. In a real world scenario, the different networks we will create would actually be in different Azure Subscriptions.
 
