@@ -14,33 +14,20 @@ Let us deploy a windows 10 machine that will be used to simulate a secure access
 
 ## Create and deploy a private virtual machine
 
-1. On your resource group overview page, hit the **"+"** sign to add a new service. ![AddVM](/images/Module01_5.png)
-___
-1. Search for **Virtual Machine** and click on **virtual Machine** ![CreateVm](/images/Module01_18.png)
-___
-1. Hit **Create** ![createVmButton](/images/Module01_19.png)
-___
-1. In the VM "basics" tab, please ensure you have your correct Subscription and resource group, then Chose **pplsaw** as the VM name, chose the right region, availability option and security type. Then chose **Windows 10 Pro** for the image to use. ![EnterVmDetail1](/images/Module01_20.png)
-___
-1. Keep scrolling the "basics" tab and chose a size (we recommend **D2S_v3**), choose an admin user name and password **(Make secure note of this password in case you need it)** and make sure the **"public inbound port" is set to "None"** ![VmBasics2](/images/Module01_21.png)
-___
-1. Finally, please confirm you have Eligible windows 10 licensing rights. Refer to the informational link there to ensure you do and. When ready, click on **Disks**![vmbasics3](/images/Module01_22.png)
-___
-1.  Chose **Standard SSD** since we do not need high performance and **check the "Delete with VM"** option. Encryption type should be set to its **Default**![Disk1](/images/Module01_23.png)
-___
-1. Then click on **Create Disk**![Disk2](/images/Module01_25.png)
-___
-1.  Now hit the **Networking** button ![Networking1](/images/Module01_26.png)
-___
-1. and enter **hub-vnet** as the virtual network, **hub-sn-connect** as the subnet, **-IMPORTANT!!** make sure you set Public IP to **None**. Then select **Basic** for NIC network security group and **None** for Public Inbound port.  ![networking2](/images/Module01_27.png)
-___
-1. wrapping up "Networking" by **checking** the **"Delete NIC when VM is Deleted"** and **"Accelerated networking"** options. Then hit the **"Management"** button.  ![network3](/images/Module01_28.png)
-___
-1. On the Management tab, MAke sure the boot diagnostics are set **Disable**, Login with Azure AD is **Checked** and **auto-shutdown is properly set**  ![Management1](/images/Module01_29.png) ![Management2](/images/Module01_30.png)
-___
-1. Finally, hit **Review and Create**. If the settings look correct, hit **Create** ![Management2](/images/Module01_31.png)
-___
-1.Last step is to enable the "Just in time" policy for this VM. When accessing the overview pane of the VM, click on **Configuration** and click on the **Enable Just-in-time** button. Please refer to the next section on how to connect to the VM. ![Jit](/images/Module01_32.png)
+1. On your resource group overview page, hit the **"+"** sign to add a new service. ![AddVM](/images/Module01_5.png) ___
+1. Search for **Virtual Machine** and click on **virtual Machine** ![CreateVm](/images/Module01_18.png) ___
+1. Hit **Create** ![createVmButton](/images/Module01_19.png) ___
+1. In the VM "basics" tab, please ensure you have your correct Subscription and resource group, then Chose **pplsaw** as the VM name, chose the right region, availability option and security type. Then chose **Windows 10 Pro** for the image to use. ![EnterVmDetail1](/images/Module01_20.png) ___
+1. Keep scrolling the "basics" tab and chose a size (we recommend **D2S_v3**), choose an admin user name and password **(Make secure note of this password in case you need it)** and make sure the **"public inbound port" is set to "None"** ![VmBasics2](/images/Module01_21.png) ___
+1. Finally, please confirm you have Eligible windows 10 licensing rights. Refer to the informational link there to ensure you do and. When ready, click on **Disks**![vmbasics3](/images/Module01_22.png) ___
+1.  Chose **Standard SSD** since we do not need high performance and **check the "Delete with VM"** option. Encryption type should be set to its **Default**![Disk1](/images/Module01_23.png) ___
+1. Then click on **Create Disk**![Disk2](/images/Module01_25.png) ___
+1.  Now hit the **Networking** button ![Networking1](/images/Module01_26.png) ___
+1. and enter **hub-vnet** as the virtual network, **hub-sn-connect** as the subnet, **-IMPORTANT!!** make sure you set Public IP to **None**. Then select **Basic** for NIC network security group and **None** for Public Inbound port.  ![networking2](/images/Module01_27.png) ___
+1. wrapping up "Networking" by **checking** the **"Delete NIC when VM is Deleted"** and **"Accelerated networking"** options. Then hit the **"Management"** button.  ![network3](/images/Module01_28.png) ___
+1. On the Management tab, MAke sure the boot diagnostics are set **Disable**, Login with Azure AD is **Checked** and **auto-shutdown is properly set**  ![Management1](/images/Module01_29.png) ![Management2](/images/Module01_30.png) ___
+1. Finally, hit **Review and Create**. If the settings look correct, hit **Create** ![Management2](/images/Module01_31.png) ___
+1.Last step is to enable the "Just in time" policy for this VM. When accessing the overview pane of the VM, click on **Configuration** and click on the **Enable Just-in-time** button. Please refer to the next section on how to connect to the VM. ![Jit](/images/Module01_32.png) 
 
 ## Connecting to your SAW
 
@@ -51,12 +38,9 @@ If your organization does not enforce JIT access, you can ignore this guidance.
 
 **IMPORTANT** If you have turned on JIT access, this step is required before you attempt to login. OF course if you do not have JIT enabled or you requested access less than 3hours ago you can disregard these steps.
 
-1. On your VM overview pane, click on **connect** ![jit1](/images/Module01_39.png)
-___
-1. Then make sure **"My IP"** is selected and click on the **Request Access** button ![jit2](/images/Module01_40.png)
-___
-1. Wait for the access to be authorized ![jit3](/images/Module01_41.png)![jit4](/images/Module01_42.png)
-___
+1. On your VM overview pane, click on **connect** ![jit1](/images/Module01_39.png) ___
+1. Then make sure **"My IP"** is selected and click on the **Request Access** button ![jit2](/images/Module01_40.png) ___
+1. Wait for the access to be authorized ![jit3](/images/Module01_41.png)![jit4](/images/Module01_42.png) ___
 1. You are now ready to connect to your VM. You must now decide which authentication mechanism to use in order to log in. Both option will use Azure Bastion to connect but the way in which you invoke it will differ.
 
 ## Choosing an authentication mechanism for the SAW
@@ -99,7 +83,7 @@ In order to use native client and AAD login, we must upgrade Azure Bastion to th
 
 Because you now have enabled Azure Bastion to log you in using your AAD credentials, we must grant the required role to your UPN.
 
-1. In the VM overview pane, click on the **Access control (IAM)** button in the left blade and click on **Add role assignment** ![vmiam1](/images/Module01_48.png)
+1. >In the VM overview pane, click on the **Access control (IAM)** button in the left blade and click on **Add role assignment** ![vmiam1](/images/Module01_48.png)
 1. Select the **Virtual machine Administrator Login** role and click next ![vmiam2](/images/Module01_49.png)
 1. Click **Select members** ![vmiam3](/images/Module01_50.png)
 1. Then **enter your user principal name** (UPN (usually your work email)) and add you to the role ![vmiam4](/images/Module01_51.png)

@@ -26,6 +26,7 @@ This lab assumes the reader has basic familiarity with the following topics:
 
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
 - You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
+- A local download of the Bing Covid-19 sample dataset in parquet format. Follow [this link](https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet) to download the file
 - (Optional) A local [installation](https://docs.microsoft.com/cli/azure/install-azure-cli) of Azure CLI
 - Patience, curiosity and a readiness to tinker.
 
@@ -34,7 +35,7 @@ This lab assumes the reader has basic familiarity with the following topics:
 1. [Environment description and architecture](/modules/module00.md)
 1. [Setting up the simulated network and secure access workstation](/modules/module01.md)
 1. [Setting up the secure access workstation (SAW)](/modules/module02.md)
-1. Setting up "private" sample data sources
+1. [Setting up "private" sample data sources](/modules/Module03.md)
 1. Setting up "Private" Azure Purview account
 1. Setting up "private" purview scans using the Managed VNET feature
 
