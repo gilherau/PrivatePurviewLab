@@ -83,7 +83,7 @@ In order to use native client and AAD login, we must upgrade Azure Bastion to th
 
 Because you now have enabled Azure Bastion to log you in using your AAD credentials, we must grant the required role to your UPN.
 
-1. >In the VM overview pane, click on the **Access control (IAM)** button in the left blade and click on **Add role assignment** ![vmiam1](/images/Module01_48.png)
+1. In the VM overview pane, click on the **Access control (IAM)** button in the left blade and click on **Add role assignment** ![vmiam1](/images/Module01_48.png)
 1. Select the **Virtual machine Administrator Login** role and click next ![vmiam2](/images/Module01_49.png)
 1. Click **Select members** ![vmiam3](/images/Module01_50.png)
 1. Then **enter your user principal name** (UPN (usually your work email)) and add you to the role ![vmiam4](/images/Module01_51.png)
