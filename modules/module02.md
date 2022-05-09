@@ -2,7 +2,7 @@
 
 Because we plan to deploy a set of services in a private network, we have to be **inside** this network. While the vast majority of deployments in the field will have a permanent network peering solution like ExpressRoute or a Site2Site VPN, for this lab, we think the easiest way is to deploy a VM that will act as a secure access workstation.
 
-Let us deploy a windows 10 machine that will be used to simulate a secure access workstation (SAW). Note we will not do any deep hardening measures to lock the machine down as we would in a real world secure access workstation so please do not consider this a template. For the full SAW story, please read [this article](https://docs.microsoft.com/en-us/security/compass/privileged-access-deployment)
+Let us deploy a windows 10 machine that will be used to simulate a secure access workstation (SAW). Note we will not do any deep hardening measures to lock the machine down as we would in a real world secure access workstation so please do not consider this a template. For the full SAW story, please read [this article](https://docs.microsoft.com/security/compass/privileged-access-deployment)
 
 **Important** We are strongly recommending to enforce certain security features to secure access to this VM so that you get a sense of how this could be securely deployed in the field:
 
@@ -20,14 +20,14 @@ Let us deploy a windows 10 machine that will be used to simulate a secure access
 1. In the VM "basics" tab, please ensure you have your correct Subscription and resource group, then Chose **pplsaw** as the VM name, chose the right region, availability option and security type. Then chose **Windows 10 Pro** for the image to use. ![EnterVmDetail1](/images/Module01_20.png) ___
 1. Keep scrolling the "basics" tab and chose a size (we recommend **D2S_v3**), choose an admin user name and password **(Make secure note of this password in case you need it)** and make sure the **"public inbound port" is set to "None"** ![VmBasics2](/images/Module01_21.png) ___
 1. Finally, please confirm you have Eligible windows 10 licensing rights. Refer to the informational link there to ensure you do and. When ready, click on **Disks**![vmbasics3](/images/Module01_22.png) ___
-1.  Chose **Standard SSD** since we do not need high performance and **check the "Delete with VM"** option. Encryption type should be set to its **Default**![Disk1](/images/Module01_23.png) ___
+1. Chose **Standard SSD** since we do not need high performance and **check the "Delete with VM"** option. Encryption type should be set to its **Default**![Disk1](/images/Module01_23.png) ___
 1. Then click on **Create Disk**![Disk2](/images/Module01_25.png) ___
-1.  Now hit the **Networking** button ![Networking1](/images/Module01_26.png) ___
+1. Now hit the **Networking** button ![Networking1](/images/Module01_26.png) ___
 1. and enter **hub-vnet** as the virtual network, **hub-sn-connect** as the subnet, **-IMPORTANT!!** make sure you set Public IP to **None**. Then select **Basic** for NIC network security group and **None** for Public Inbound port.  ![networking2](/images/Module01_27.png) ___
 1. wrapping up "Networking" by **checking** the **"Delete NIC when VM is Deleted"** and **"Accelerated networking"** options. Then hit the **"Management"** button.  ![network3](/images/Module01_28.png) ___
 1. On the Management tab, MAke sure the boot diagnostics are set **Disable**, Login with Azure AD is **Checked** and **auto-shutdown is properly set**  ![Management1](/images/Module01_29.png) ![Management2](/images/Module01_30.png) ___
 1. Finally, hit **Review and Create**. If the settings look correct, hit **Create** ![Management2](/images/Module01_31.png) ___
-1.Last step is to enable the "Just in time" policy for this VM. When accessing the overview pane of the VM, click on **Configuration** and click on the **Enable Just-in-time** button. Please refer to the next section on how to connect to the VM. ![Jit](/images/Module01_32.png) 
+1.Last step is to enable the "Just in time" policy for this VM. When accessing the overview pane of the VM, click on **Configuration** and click on the **Enable Just-in-time** button. Please refer to the next section on how to connect to the VM. ![Jit](/images/Module01_32.png)
 
 ## Connecting to your SAW
 
@@ -51,7 +51,7 @@ We now have to decide how we will authenticate to the SAW VM. The easiest way is
 
 If you do not wish/need to use Azure Active Directory authentication to your VM. here is how you use Azure Bastion to connect:
 
-First, if you have enabled JIT access, you have to request access. See 
+First, if you have enabled JIT access, you have to request access. See
 
 ### Connecting to your SAW using Azure AD credentials
 
@@ -60,7 +60,7 @@ In order to connect, also, the device likely needs to be "managed". If this is y
 
 ### Install Azure CLI and confirm it is able to log in
 
-1. [Download the windows version of Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) bits and install it on your machine
+1. [Download the windows version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli-windows?tabs=azure-cli) bits and install it on your machine
 1. Open a windows Terminal (hit the windows key and type **"Terminal"**) and type in the following command:
 
 ``` azurecli
